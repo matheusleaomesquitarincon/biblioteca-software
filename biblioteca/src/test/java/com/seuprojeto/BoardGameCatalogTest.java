@@ -1,4 +1,4 @@
-// src/test/java/com/seuprojeto/BoardGameCatalogTest.java
+
 
 package com.seuprojeto;
 
@@ -32,7 +32,7 @@ public class BoardGameCatalogTest {
 
     @Test
     void testAddDuplicateGame() {
-        // Tenta adicionar um jogo com nome já existente
+        
         BoardGame duplicateGame = new BoardGame("Catan", 3, 4, 90);
         catalog.addGame(duplicateGame);
         assertEquals(1, catalog.getAllGames().size());

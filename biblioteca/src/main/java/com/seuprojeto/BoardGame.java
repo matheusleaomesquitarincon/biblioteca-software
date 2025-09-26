@@ -1,4 +1,4 @@
-// src/main/java/com/seuprojeto/BoardGame.java
+
 
 package com.seuprojeto;
 
@@ -15,7 +15,7 @@ public class BoardGame {
         this.playingTimeMinutes = playingTimeMinutes;
     }
 
-    // Getters
+   
     public String getName() {
         return name;
     }
@@ -32,7 +32,7 @@ public class BoardGame {
         return playingTimeMinutes;
     }
 
-    // Opcionalmente, pode-se adicionar setters, mas para este caso, os getters são suficientes.
+    
 
     @Override
     public String toString() {
@@ -44,7 +44,7 @@ public class BoardGame {
                '}';
     }
 
-    // É uma boa prática implementar equals e hashCode para testes e coleções
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

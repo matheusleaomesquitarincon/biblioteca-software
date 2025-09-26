@@ -1,4 +1,4 @@
-// src/main/java/com/seuprojeto/BoardGameCatalog.java
+
 
 package com.seuprojeto;
 
@@ -14,7 +14,7 @@ public class BoardGameCatalog {
     }
 
     public void addGame(BoardGame game) {
-        // Evita adicionar jogos com o mesmo nome
+        
         if (findGameByName(game.getName()).isEmpty()) {
             games.add(game);
         }
@@ -31,7 +31,7 @@ public class BoardGameCatalog {
     }
 
     public List<BoardGame> getAllGames() {
-        return new ArrayList<>(games); // Retorna uma cópia para evitar modificações externas
+        return new ArrayList<>(games); 
     }
     
     public List<BoardGame> getGamesByPlayerCount(int players) {

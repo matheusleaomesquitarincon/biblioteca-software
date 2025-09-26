@@ -24,7 +24,7 @@ jobs:
       run: mvn -B package --file pom.xml # Passo 2: Executa o ciclo de vida do Maven. O 'package' já inclui as fases 'compile' e 'test'.
 
     - name: Gerar Artefato JAR
-      uses: actions/upload-artifact@v3 # Passo 3: Salva o JAR como um artefato no pipeline
+      uses: actions/upload-artifact@v4 # Passo 3: Salva o JAR como um artefato no pipeline
       with:
         name: boardgame-catalog-jar # Nome do artefato
         path: target/*.jar # Caminho do arquivo a ser salvo
